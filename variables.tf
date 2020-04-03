@@ -22,6 +22,10 @@ variable "aws_secret_key" {
   description = "the user aws secret key"
 }
 */
+
+variable "VpcName" {
+  default = "dev"
+}
 variable "credentialsfile" {
   default     = "/Users/dimitar_shenkov/.aws/credentials" #replace your home directory
   description = "where your access and secret_key are stored, you create the file when you run the aws config"
