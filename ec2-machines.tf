@@ -8,6 +8,7 @@ resource "aws_instance" "phpapp" {
   tags = {
     Name = "phpapp"
   }
+# 2 variant user_data   = file("./scripts/some_your_script.sh")  
   user_data = <<HEREDOC
   #!/bin/bash
   yum update -y
